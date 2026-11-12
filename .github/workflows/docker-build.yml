@@ -47,8 +47,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  repo_owner: ${{ github.repository_owner }}
-
+  repo_owner: ${{ github.repository }}
 # Shape of a run: `check`, `test` and `build` start together; `smoke` boots
 # what `build` produced. On a branch that is the whole run. On main, `merge`
 # tags the images once everything is green and `version` turns the run into a
