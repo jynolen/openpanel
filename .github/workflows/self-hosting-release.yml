@@ -19,7 +19,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  repo_owner: openpanel-dev
+  repo_owner: ${{ github.repository_owner }}
   # The last release before this workflow existed; the first notes start here.
   BASELINE_TAG: v2.3.0
 
